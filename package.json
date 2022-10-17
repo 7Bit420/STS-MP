@@ -4,7 +4,8 @@
   "description": "A libray to manage server to server messages",
   "main": "out/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -R -f ./out; cp -R ./src/. ./out; find ./out -name \"*.ts\" -delete; tsc;"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/7Bit420/STS-MP/issues"
   },
-  "homepage": "https://github.com/7Bit420/STS-MP#readme"
+  "homepage": "https://github.com/7Bit420/STS-MP#readme",
+  "dependencies": {
+    "@types/node": "^18.11.0"
+  }
 }
